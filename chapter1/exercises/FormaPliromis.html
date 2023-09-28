@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="gr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Φόρμα Πληρωμής</title>
+</head>
+<body>
+    <h1><strong>Φόρμα Πληρωμής</strong></h1>
+
+    <p> Τα υποχρεωτικά πεδία ακολουθούνται από <abbr title="Required field">*</abbr></p>
+
+    <h2>Προσωπικά Στοιχεία</h2>
+    <fieldset>
+        <legend>Title</legend>
+        <div>
+            <input type="radio" name="title" id="Mr" value="Mr">
+            <label for="Mr">Mr.</label>
+            <br>
+            <input type="radio" name="title" id="Mrs" value="Mrs">
+            <label for="Mr">Mrs.</label>
+            <br>
+            <input type="radio" name="title" id="Dr" value="Dr">
+            <label for="Dr">Dr.</label>
+        </div>
+    </fieldset>
+    <br>
+    <div>
+        <label for="username">Name:<abbr title="Required field">*</abbr></label>
+        <input type="text" id="name">
+    </div>
+    <br>   
+    <div>
+        <label for="email">E-mail:<abbr title="Required field">*</abbr></label>
+        <input type="email" id="email">
+    </div>
+    <br>
+    <div>
+        <label for="password">Password:<abbr title="Required field">*</abbr></label>
+        <input type="password" id="Password">
+    </div>
+
+    <h2>Πληροφορίες Πληρωμής</h2>
+
+    <div>
+        <label for="card-type">Card type:</label>
+        <select>
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="american-express">American Express</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="card-number">Card number:<abbr title="Required field">*</abbr></label>
+        <input type="text" id="card">
+    </div>
+    <br>
+    <div>
+        <label for="expiration-date">Expiration:<abbr title="Required field">*</abbr></label>
+        <input type="number" placeholder="MM/YY" id="expiration-date">
+    </div>
+    <br>
+    <div>
+        <button>
+            <label for="pay">Προχωρήστε στην πληρωμή</label>
+        </button>
+    </div>
+
+</body>
+</html>
