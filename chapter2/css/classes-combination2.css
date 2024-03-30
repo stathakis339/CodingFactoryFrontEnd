@@ -1,0 +1,19 @@
+/* we can see all the elements with color white and
+ the backgrounds are specific color each of them*/
+
+
+.fg-light {
+    color: white;
+}
+
+.aueb-title-bg {
+    background-color: green;
+}
+.cf-title-bg {
+    background-color: brown;
+}
+
+.aueb-text-bg {
+    background-color: blue;
+}
+

@@ -1,0 +1,23 @@
+img {
+    width: 70%;
+    height: 20%;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 2px 0px 2px #000000;
+    color: #762124;
+    opacity: none;
+}
+
+p {
+    font-size: 21px;
+    font-weight: 200;
+    /* color: #707070; */
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+

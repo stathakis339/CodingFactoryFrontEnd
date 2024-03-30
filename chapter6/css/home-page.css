@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    width: auto;
+    background-color: #762125; 
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    /* float: left; */
+}
+
+.logo > img {
+    width: auto;
+    height: 120px;
+    /* vertical-align: middle; */
+}
+
+.navbar {
+    width: 560px;
+}
+
+/* .nav {
+    margin-right: 35px;
+    width: 360px;
+    margin-left: 35px;
+} */
+
+.navbar .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    list-style: none;
+}
+
+/* .nav > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    list-style: none;
+} */
+
+.navbar .nav > li > a {
+    display: block;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1,2rem;
+}
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+    background-color:white;
+    color: #762125;
+    transition: all 0.5s ease-in;
+}
+
+
+
+.navbar .dropdown {
+    position: relative;
+    /* font-size: 1.2rem; */
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    padding-top: 50px;
+    background-color: #762125;
+    width: 120px;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start; 
+}
+
+.navbar .dropdown-content > li {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+}
+
+.navbar .dropdown-content > li:last-of-type {
+     border-bottom: none;
+}
+
+.navbar .dropdown-content a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    font-size: 1.2rem;
+}
+.navbar .dropdown-content a:focus,
+.navbar .dropdown-content a:hover {
+    /* background-color: #217628; */
+    background-color:white;
+    color: #762125;
+    transition: all 0.5s ease-in;   
+}
+
+.navbar .dropdown > a {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar .dropdown:hover > .dropdown-content {
+    display: flex; 
+}
+
+.navbar .nav a:active {
+    background-color: cornflowerblue;
+}
+
+.nav-toggle {
+    display: none;
+    margin-right: 30px;
+}
+
+.nav-toggle > button {
+    width: 50px;
+    height: 50px;
+}
+
+.home-img {
+    overflow: hidden;
+    height: calc(97vh - 120px);
+    background-image: url(../../img/tep-aueb2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-title {
+    width: 50%;
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.gap-bottom {
+    margin-bottom: 25px;
+}
+
+.main   {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start ;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    height: 150px;
+    background-color: #762125;
+    justify-content: space-between;
+    align-items: center;
+    color: wheat;
+    padding: 0 10px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social > span {
+    margin-right: 10px;
+}
+
+.social-text {
+    color: rgb(21, 58, 223);
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+/* Navbar Toggle  */
+.navbar-toggle {
+    display: none;
+}
+
+.navbar-toggle .nav,
+.navbar-toggle .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-toggle li {
+    width: 100%;
+    text-align: center;
+    list-style: none;
+}
+
+.navbar-toggle a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.navbar-toggle .dropdown-content a {
+    font-size: 1rem;
+}          
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .navbar {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+    .home-title > span {
+        font-size: 2.1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .home-title > span {
+        font-size: 1.9rem;
+    }
+
+    .logo > img {
+        width: auto;
+        height: 100px;
+    }
+}
+
+@media (max-width: 700px) {
+    .home-title > span {
+        font-size: 1.7rem;
+    }
+
+    .home-title {
+        line-height: 0.9;
+    }
+}
+
+@media (max-width: 600px) {
+    .home-title > span {
+        font-size: 1.5rem;
+    }
+
+    .home-title {
+        line-height: 0.9;
+    }
+
+    .logo > img {
+        width: auto;
+        height: 80px;
+    }
+
+    .nav-toggle > button {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
