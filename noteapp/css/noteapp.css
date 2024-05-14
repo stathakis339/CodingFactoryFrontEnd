@@ -54,7 +54,7 @@
     font-size: 18px;
 }
 
-.strike-through {
+.line-through {
     text-decoration: line-through;
     color: gray;
 }
