@@ -41,8 +41,8 @@ window.addEventListener('DOMContentLoaded', function() {
         let formatedMonth = monthsGR[month]
 
         let formatedDate = `${formatedDay}, ${date} ${formatedMonth} ${year}`
-        let formatedTime = `${(hours < 0) ? '0' : ''}${hours}
-                            ${(minutes < 0) ? '0' : ''}${minutes}
+        let formatedTime = `${(hours < 0) ? '0' : ''}${hours} :
+                            ${(minutes < 0) ? '0' : ''}${minutes}:
                             ${(seconds < 0) ? '0' : ''}${seconds}`
 
         document.querySelector('.header').innerHTML = formatedDate
