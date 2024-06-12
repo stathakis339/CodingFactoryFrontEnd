@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling</title>
+    <link rel="stylesheet" href="./css/each1.css">
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Hello</li>
+            <li>Coding</li>
+            <li>Factory</li>
+            <li id="link"></li>
+        </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" 
+            integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        // $( document ).ready(function() {
+        //     $( 'li' ).each(function( index ) {
+        //         console.log( index + ":" + $( this ).text())
+        //     })
+        // })
+
+        // $(document).ready(function() {
+        //     $('li').each(function() {
+        //         $( this ).addClass('error-text')
+        //     })
+        // })
+        //   OR
+
+        // implicit iteration
+        // $(function () {                     
+        //     $('li').addClass('errot-text')
+        // })
+
+        // $( function() {
+        //     $('li').each(function(index, item) {
+        //         if ($(item).is('#link')) {
+        //             $(item).append('<a class="cf-link>Visit Us</a>')
+        //             $('.cf-link').attr('href', 'https://www.aueb.gr/')
+        //             return false
+        //         }
+        //     })
+        // } )
+
+        $(function() {
+            $('li').each(function(index, item) {
+            if ($(item).is('#link')) {
+                $(item).append('<a class="cf-link" href="https://codingfactory.aueb.gr/">Visit Us</a>');
+                return false; // Stop the loop once the item is found and modified
+        }
+    });
+});
+
+
+
+    </script>
+</body>
+</html>
